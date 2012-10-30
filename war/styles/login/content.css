@@ -1,0 +1,92 @@
+ /* CSS Document */
+
+
+body {
+ font-family:Arial, Helvetica, Sans-Serif;
+ color: #56595d;
+ }
+
+ 
+ h1, h2, h3, h4{
+  font-family:Arial, Helvetica, Sans-Serif;
+  color: #404344;
+  text-decoration: none;
+  }
+ 
+/* global content styles
+--------------------------------------------------------------------------------------- */  
+
+h1 { font-size: 18px; color: #005595; text-transform:uppercase; margin: 0 0 24px 0;}
+h2 { font-size: 17px; margin: 0 0 13px 0; line-height: 16px; padding: 0px;color: #1D2127;} 
+h3 { font-size: 12px; margin: 0 0 7px 0;}
+h4 { font-size: 10px; margin: 0 0 4px 0;}
+p  {font-size: 13px; line-height: 19px; margin: 0 0 29px 0; color: #666666;}
+
+strong {font-weight: bold;}
+ 
+em {font-weight: normal; text-decoration: none; color: #0d4f7e;;}
+abbr, acronym {color: #666; border-bottom: 0em; text-decoration: none;}
+
+a:link, a:visited, a:active, a:hover {color: #FF4100; text-decoration: none;}
+a:hover { color: #FF4100; text-decoration: underline;}
+		
+
+/* Header, logo, Navigation, Searchbar, Search results content styles
+--------------------------------------------------------------------------------------- */
+
+
+#NavContainer{}
+	#NavContainer {float: right; width: 154px; height: 39px; margin: 0;padding: 0px; background:url("../../images/login/login-tab.png") no-repeat;}
+	#NavContainer #accountLogin{margin: 0 0 0 11px;padding: 0;}
+	#NavContainer #accountLogin li {float: left; margin: 10px 1px 0 0; padding: 4px 0 4px 0;display: inline;list-style-type: none;}
+	#NavContainer #accountLogin li a {
+ 		float: left;
+ 		line-height: 13px;
+ 		padding: 0 12px 0 12px;
+		margin: 0px;
+ 		font-size: 12px;
+ 		color: #fff;
+		text-transform:uppercase;
+		text-decoration: none;
+ 		}
+	
+	#NavContainer #accountLogin li a:hover {color: #fff; text-decoration:underline;}
+	#NavContainer #accountLogin li.set1 {border-right: 1px solid #456780;}
+	#NavContainer #accountLogin li.set2 {border-left: 1px solid #abc7db;}
+	
+	
+/* Form content styles
+--------------------------------------------------------------------------------------- */
+
+.form {
+	position: relative;
+	top: 345px;
+	left: 58px;
+	margin: 0;
+	}
+	
+.signup {position: relative; top: 317px; color: #a9a9a9; margin: 0 0 0 130px;}
+.signup a {color:#cbf291;}
+.forgetpassword {position: relative; top: 0px; width: 200px;color: #a9a9a9; line-height: 13px; margin: 0 0 0 73px;}
+.forgetpassword a {color:#cbf291;}
+
+label {font-size: 14px; color: #a9a9a9;}
+.input-1 {width: 431px; height: 20px; padding: 0px; margin-left: 3px;}
+.input-2 {width: 300px; height: 20px; padding: 0px; margin-left: 6px;}
+input {border: none;} 
+
+fieldset {padding: 3px 0 0 0;}
+fieldset p {margin: 0 0 28px 0;}
+fieldset p.marginSet {margin: 0 0 17px 0;}
+fieldset .trans-btn {float: right; width: 90px; height: 32px; margin: 9px 78px 0 0; background:url("../../images/login/trans-btn.png") no-repeat;}
+fieldset .trans-btn:hover {text-decoration:none;}
+
+
+
+
+
+
+
+
+
+

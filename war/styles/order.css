@@ -1,0 +1,97 @@
+/* CSS Document */
+
+* {margin: 0px; padding: 0px;}
+.clearfix {clear:both;}
+
+#Order-box {
+	width:272px;
+	position: relative;
+	top:0px;
+	left: 0px;
+	margin: 0px;
+	padding-bottom: 6px;
+	background:url("../images/box-bottom.png") no-repeat bottom left;
+	}
+	
+#Order-header {
+	width: 272px;
+	height: 68px;
+	position: relative;
+	top:0px;
+	left:0px;
+	background:url("../images/myOrderbar.png") no-repeat top left;
+	}
+
+#Order-titles {
+	width: 255px;
+	height: 15px;
+	float: left;
+	margin:0px 0 0 7px;
+	font-family:"Times New Roman", Times, serif;
+	}
+	
+#OrderItems {
+	width: 272px;
+	position: relative;
+	top:0px;
+	left:0px;
+	margin: 0px;
+	padding-bottom: 10px;
+	background:url("../images/box-mid.png") repeat-y top left;
+	}
+
+.checkout {float: right; margin: 11px 8px 0 0;}
+
+#OrderItems table {
+	font-family:"Times New Roman", Times, serif;
+	width: 255px;
+	margin-left: 8px;
+	}
+	
+#menuBox {width: 549px; height: 117px; margin-bottom: 20px; background:url("../images/menu-box.png") no-repeat top left;}
+
+.column-title {margin: 0px;}	
+#Order-titles ul {margin: 0px; padding:0; list-style-type:none; width: 255px;}
+#Order-titles li {display:block; float:left; margin:0px; margin: 0px; font-family:"Times New Roman", Times, serif;}
+
+#Order-titles li.one {margin-right: 104px; font-size: 14px; height: 14px; font-weight: bold; color: #3F3D3D; padding: 0px 0 0 3px;}
+#Order-titles li.two {margin-right: 9px; font-size: 13px; font-weight: bold;color: #343434; padding: 0;}
+#Order-titles li.three {margin-right: 14px; font-size: 13px; font-weight: bold;color: #343434;padding: 0;}
+#Order-titles li.four {font-size: 13px; font-weight: bold;color: #343434; padding: 0;}
+
+td.quantity input {font-family:"Times New Roman", Times, serif; width: 16px; height: 18px; margin-top: 5px; border: 1px solid #333333;}
+#OrderItems td {padding: 5px 0 5px 0;}
+#OrderItems td.items {font-family:"Times New Roman", Times, serif; width: 116px; font-size: 14px; font-weight: bold; color: #3F3D3D; padding: 18px 0 7px 3px;border-bottom: 1px dashed #CECECE;}
+#OrderItems td.quantity {font-family:"Times New Roman", Times, serif; width: 22px; font-size: 13px; color: #343434; padding: 5px 0 5px 0;border-bottom: 1px dashed #CECECE;}
+#OrderItems td.each {font-family:"Times New Roman", Times, serif; width: 40px;  font-size: 13px; color: #343434; margin-right: 1px; padding: 5px 0 5px 0;border-bottom: 1px dashed #CECECE;}
+#OrderItems td.price {font-family:"Times New Roman", Times, serif; width: 40px;  font-size: 13px; color: #343434; padding: 5px 0 5px 0; float: none;border-bottom: 1px dashed #CECECE;}
+
+span.toppings {font-family:"Times New Roman", Times, serif; font-size: 12px; color:#747272; font-weight: normal; margin-bottom: 14px;}
+td.bd-fix {border-bottom: 1px dashed #C7D1D1;}
+#OrderItems td span.remove {margin-top: 10px; padding-right: 10px;}
+#OrderItems td span.remove a {font-family:"Times New Roman", Times, serif; position: relative; font-size: 12px; color: #A41B22;  text-decoration:underline;padding-right: 34px;}
+tr.bottomborder td { 
+border-bottom: 1px dashed #CECECE;  
+}
+
+
+#OrderItems td.orderLinks {padding: 0px; font-family:"Times New Roman", Times, serif; border-bottom:none;}
+#OrderItems td.orderLinks a {font-family:"Times New Roman", Times, serif; position: relative; top: 0px; /*line-height: 13px;*/ font-size: 12px; font-weight: bold; margin: 2px 0 0 5px; color: #A41B22; text-decoration:underline;}
+#OrderItems td.tax {font-family:"Times New Roman", Times, serif; text-align: right; font-size: 13px; color: #343434; padding: 5px 9px 5px 0; margin-right: 7px; border-bottom:none;}
+tr.priceTotals {
+font-family:"Times New Roman", Times, serif; 
+width: 260px; 
+}
+
+.menulinks { float: left; width: 100px; margin:12px 15px 40px 20px; padding:0; list-style-type:none; }
+.menulinks a { 
+	font-size: 12px;
+	color:#000; 
+	text-decoration:underline; 
+	font-family:Arial, Helvetica, sans-serif; 
+		
+	}
+.menulinks li {float: left; width: 100px; display: inline; margin-bottom:4px;}
+.menulinks ul li a:hover { 
+	color:#610B0E;  
+	}

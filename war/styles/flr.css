@@ -1,0 +1,157 @@
+button       {width: 120px;}
+.left        {float: left;}
+.right       {float: right;}
+.clearLeft   {clear: left;}
+.clearRight  {clear: right;}
+.widgetLabel {width: 100px;}
+
+.popup {
+	position: absolute;
+	top: -99999px;
+	left: -9999px;
+	visibility: hidden;
+	z-index: 1000;
+	border: 1px solid #2a516e;
+	padding: 10px;
+	background: #fff;
+	overflow: scroll;
+	}
+	
+#details {}
+#DetailForm input {margin-bottom: 5px;}
+
+#menuBox {margin-bottom: 40px; border-bottom:1px solid #667d92;}
+#MenuEditor {width: 500px;margin: 27px 0 27px 0;}
+
+.MenuTab {
+	background-color: #fff;
+	border-left:1px solid #a4b2bf;
+	border-right:1px solid #a4b2bf;
+	border-top:1px solid #a4b2bf;
+	display: inline;
+	padding: 13px 17px 13px 17px;
+	margin-right: 3px;
+	color: #5e5e5e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-transform:uppercase;
+	font-weight:normal;
+	}
+	
+.MenuTabSelected {
+	background-color: #e0eef7;
+	border-left:1px solid #667d92;
+	border-right:1px solid #667d92;
+	border-top:1px solid #667d92;
+	display: inline;
+	padding: 13px 17px 13px 17px;
+	margin-right: 3px;
+	color: #5e5e5e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-transform:uppercase;
+	font-weight:normal;
+	background:url("../images/tab-tile-1.jpg") repeat-x;
+	}
+		
+.MenuEditCategory {
+  color: #3980CA; 
+  border: 1px solid #bebebe;
+  border-bottom: none;
+  margin-bottom: 40px;
+  /*background: #f7f8f9;*/
+  background: #fcfaf7;
+}
+
+.formItem {
+	float: left;
+	width: 100px;
+}
+
+.formItemLabel {
+	float: left;
+	margin-right:17px;
+	width: auto;
+	font-size:12px;
+	color: #5E5E5E;
+}
+
+.formActions {height: 44px; width: 510px; padding: 0px 10px 0px 10px; margin: 5px 0 0 0; background:url("../images/greyTile.png") repeat-x;  
+}
+
+
+.actions input.button, .formActions input.button {
+    padding: 0 .25em;
+    width: 0; /* for IE only */
+    overflow: visible;
+	float: left; margin: 0 .8em 0 0; display: inline;
+}
+
+.actions input.button[class], .formActions input.button[class] { /* IE ignores [class] */
+    width: auto;
+}
+
+.formActions input.button {margin-top: 13px;}
+
+.blueColor {
+	color: #3980CA;
+	font-weight: bold;
+	}
+
+.moveHandle {
+    float: left;
+    width: 10px;
+    background: #acacac url("../images/moveHandle.gif") repeat-y top left;
+}
+
+/*-----table styles-----*/
+
+.menutable {border-right: 1px solid #ccc; border-top: 1px solid #ccc; margin-bottom: 20px; background-color: #fff;}
+.menutable caption {padding: 7px 0 7px 0; text: align: center; color: #000;}
+.menutable th, td {padding: 7px 0 7px 5px;}
+.menutable th {color: #000; font-weight: bold;}
+.menutable td {color: #000; font-weight: normal;}
+
+.menutable th {
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	}
+
+.menutable td {
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 11px;
+	}
+
+.btn1 {background:url("../images/buttons/edit.png") no-repeat; width: 50px; height: 25px;}
+.btn2 {background:url("../images/buttons/delete-menu.png") no-repeat; width: 100px; height: 25px;}
+.btn3 {background:url("../images/buttons/add-catagory.png") no-repeat; width: 100px; height: 25px;}
+.btn4 {background:url("../images/buttons/delete.png") no-repeat; width: 64px; height: 25px;}
+.btn5 {background:url("../images/buttons/add-topping.png") no-repeat; width: 100px; height: 25px;}
+.btn6 {background:url("../images/buttons/add-topping-price.png") no-repeat; width: 129px; height: 25px;}
+.btn7 {background:url("../images/buttons/add-item.png") no-repeat; width: 80px; height: 25px;}
+.btn8 {background:url("../images/buttons/add-price.png") no-repeat; width: 80px; height: 25px;}
+.btn9 {background:url("../images/buttons/addMenu.png") no-repeat; width: 160px; height: 50px; border: none;}
+.btnA {background:url("../images/buttons/importPDF.png") no-repeat; width: 160px; height: 50px; border: none;}
+.btnB {background:url("../images/buttons/Preview.png") no-repeat; width: 160px; height: 50px; border: none; }
+.btnHelp   {background:url("../images/help.png") no-repeat; width: 118px; height: 50px; border: none; float: left; }
+.btnLogout {background:url("../images/logout.png") no-repeat; width: 118px; height: 50px; border: none; float: right; }
+
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8 {
+	padding: 0;
+    overflow: visible;
+	float: left; margin: 10px 7px 0 0; display: inline;
+	border:none;
+	cursor: pointer;
+	}
+
+
+
+
+
+
+
+
+
+

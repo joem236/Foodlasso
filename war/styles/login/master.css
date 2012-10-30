@@ -1,0 +1,52 @@
+/* CSS Document */
+/* --------------------------------------------------------------------------------------------------------
+   Title:			FoodLasso
+   Author:			Milton Pacheco
+   Email:			mpacheco@bowfusion.com
+   License: 		Copyright 2010, Bowfusion. All Rights Reserved.
+   description:	    This is the base style sheet imports other style sheets.
+----------------------------------------------------------------------------------------------------------*/ 
+   
+/* Imported styles
+--------------------------------------------------------------------------------------- */
+   
+   @import url("reset.css");
+   @import url("layout.css");
+   @import url("content.css");
+  
+
+/* --Global Classes--*/
+
+.floatRight {float:right;}
+.floatLeft {float:left;}
+
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align:center;}
+.justify {text-align:justify;}
+.hide {display: none;}
+.clear {clear: both;}
+
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+.underline {border-bottom:1px solid;}
+.highlight {background:#ffc;}
+.italic {font-style:italic;}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.floatRight {float:right;}
+.floatLeft {float:left;}
+

@@ -1,0 +1,106 @@
+
+/* CSS Document */
+
+/*----------------------------global framework*/
+
+body {
+	background:url("../../images/flp/background.png") repeat-x top left;
+	background-color: #fff; 
+}
+
+#Wrapper {
+	width: 960px;
+	position:relative;
+	top: 0px;
+	left: 50%;
+	margin: 0px 0 0 -480px; 
+	}
+
+#meshead {
+	width: 960px; 
+	height: 170px;
+	position:relative;
+	top: 14px;
+	left: 0;
+	margin: 17px 0 0 0;
+	padding: 0px;
+	}
+
+#Wrapper-content {
+	width: 960px;
+	position:relative;
+	top: 12px;
+	margin: 0; 
+	}
+	
+#leftColumn {
+    float: left;
+	width: 188px;
+	display: inline;	
+	}
+
+#ContentBody {
+	float: left;
+	width: 542px;
+	margin: 0 20px 10px 20px;
+	display: inline;
+	}
+
+#rightColumn {
+    float: left;
+	width: 188px;
+	display: inline;
+	}
+
+#searchPanel {
+	width: 960px;
+	height: 60px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	background:url("../../images/flp/search-tile.jpg") repeat-x top left;
+	}
+	
+#searchResults {
+	width: 960px;
+	height: 36px;
+	position: relative;
+	margin: 22px 0 0 0;
+	padding: 0;
+	background:url("../../images/flp/searchResults.jpg") no-repeat top left;
+	border-top: 1px solid #fff;
+	}
+		
+#mapModule {
+	width: 540px; 
+	height: 259px;
+	position:relative;
+	top: 0;
+	left: 0;
+	margin: 0 0 19px 0;
+	padding: 0;
+	border: 1px solid #d7d6d6;
+	}
+	
+#restaurantResults {
+	width: 540px; 
+	position:relative;
+	top: 0;
+	left: 0;
+	margin: 0 0 49px 0;
+	padding: 0;
+	}
+    
+
+
+/*----------------------------Subpage layout only*/
+
+
+#footer {
+	height: 38px;
+	width: 960px;
+	position:relative;
+	left: 0px;
+	margin-top:20px;
+	}
+	

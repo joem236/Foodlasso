@@ -1,0 +1,61 @@
+/* --------------------------------------------------------------------------------------------------------
+   Title:			Ifusion Media
+   Author:			Milton Pacheco
+   Email:			milt126@yahoo.com
+   License: 		Copyright 2009, Ifusion Media. All Rights Reserved.
+   description:	    This is the base style sheet imports other style sheets.
+-----------------------------------------------------------------------------------------------------------*/
+   
+/* Imported styles
+---------------------------------------------------------------------------------------------------------- */
+
+   @import url("layout.css");
+   @import url("content.css");
+   @import url("form.css");
+   
+   
+
+/* --Global Classes--*/
+   
+.right {float: right;}
+.left {float: left;}
+
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align:center;}
+.justify {text-align:justify;}
+.hide {display: none;}
+.clear {clear: both;}
+
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+.underline {border-bottom:1px solid;}
+.highlight {background:#ffc;}
+
+img.centered {display: block;margin-left: auto;margin-right: auto;}
+img.alignleft {float:left;margin:4px 10px 4px 0;}
+img.alignright {float:right;margin:4px 0 4px 10px;}
+
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

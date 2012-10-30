@@ -1,0 +1,73 @@
+.message {
+    width: 500px;
+	padding: 15px 1px 15px 1px;
+    margin-bottom: 5px;
+	border-bottom:dashed 1px #999;
+}
+
+.message .header h2 {
+	font-size: 20px;
+	color:#3980CA;
+	margin-bottom: 7px;
+    margin-top: 1px;
+}
+
+.message h2 p {
+	font-size: 20px;
+	color:#3980CA;
+	margin-bottom: 7px;
+    margin-top: 1px;
+}
+
+.message .text {
+    width: 100%;
+}
+
+.controls {
+    background-color: #CCCCCC;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.newMessage {
+    display: none;
+    visibility: hidden;
+}
+
+.controls button {
+    width: 50px;
+}
+
+.btn {
+    float: left;
+    line-height: 1em;
+    margin-right: 5px;
+    padding-left: 3px;
+	}
+	
+.btn a {
+    display: block;
+    font-size: 10px;
+    line-height: 19px;
+    padding: 0 10px 2px 7px;
+	}
+
+.btn a, .btn input {
+    border: 0 none;
+    color: #111111;
+    font-family: "Nimbus Sans L",Helvetica,Arial,Verdana,sans-serif;
+    text-decoration: none;
+    width: auto;
+	}
+
+.btn-small-white a, .btn-small-white input, .btn-small-whitestrong a, .btn-small-whitestrong input {
+    background: url("../images/btn-small-white.gif") no-repeat scroll right top transparent;
+	}
+
+.btn-small-white, .btn-small-whitestrong {
+    background: url("../images/btn-small-white.gif") no-repeat scroll left top transparent;
+	}
+
+.btn-small-white, .btn-small-green, .btn-small-red, .btn-small-whitestrong {
+    height: 19px;
+	}

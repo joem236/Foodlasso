@@ -1,0 +1,59 @@
+.category {
+    clear: both;
+    padding: 2px;
+    width: 90%;
+}
+
+.categoryName {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    text-transform:uppercase;
+    width: 99%;
+}
+
+.categoryDesc {
+    font-size: 10pt;
+    text-align: center;
+    width: 99%;
+}
+
+.item {
+    clear: both;
+    width: 99%;
+}
+
+.itemData {
+    float: left;
+    width: 60%;
+}
+
+.itemName { 
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+.itemDesc {
+    font-size: 8pt;
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.prices {
+    float: right;
+    padding: 2px;
+    width: 134px;
+}
+
+.price {
+    font-size: 8pt;
+    float: right;
+    padding: 2px;
+    width: 50px;
+}
+
+.itemControls {
+    float: right;
+    padding: 2px;
+}
+

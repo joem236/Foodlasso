@@ -1,0 +1,188 @@
+/* CSS Document */
+
+* {
+	margin:0px;
+	padding:0px;
+	}
+	
+body {
+	font-family:Arial, Helvetica, Sans-Serif;
+	background:url("../images/mp/pattern.png") repeat;
+	}
+	
+h1, h2, h3, h4 {font-family: "Lucida Grande", Arial, Helvetica, San-Serif; color: #A61C20;}
+h1 { font-size: 24px; margin: 0 0 10px 0;}
+h2 { font-size: 16px; margin: 0 0 8px 0;} 
+h3 { font-size: 12px; margin: 0 0 3px 0;}
+h4 { font-size: 11px; margin: 0 0 2px 0;} 
+
+p { font-size:12px; line-height: 19px; font-weight: normal; margin-bottom: 15px;}
+
+a:link, a:visited, a:active { color: #A61C20; font-family:Arial, Helvetica, Sans-Serif;  text-decoration: none; }  
+a:hover { color:#A61C20; text-decoration:underline;}
+
+/* body styles
+--------------------------------------------------------------------------------------- */
+
+#Navigation ul{ margin:0 0 0 20px; padding:0; list-style-type:none; width: 510px;}
+	#Navigation ul li{ display:block; float:left; margin:0 ; margin-top: 6px;}
+	#Navigation ul li a { 
+		font-size: 13px;
+		display:block; 
+		float:left; 
+		color:#fff; 
+		text-decoration:none; 
+		border-right: 1px dotted #cccccc; 
+		padding: 10px 30px 5px 30px; 
+		height:20px;
+	}
+	#Navigation ul li a:hover, #Navigation ul li a.current { 
+		color:#fff;  
+		background-color:#610B0E;
+		}
+			
+#leftColumn img {margin-bottom: 10px;}
+#leftColumn p {margin-right: 10px; font-size: 11px; line-height: 13px;}
+#leftColumn .link-icon {
+	font-size: 11px;  
+	padding:  0px 0 2px 20px;
+	color:#000; 
+	background:url("../images/mp/arror-icon.png") no-repeat top left;
+	}
+
+#leftColumn a:hover {color:#A61C20; text-decoration:underline;}	
+
+#leftColumn .icon-button {
+	font-size: 12px;  
+	color:#fff;
+	width: 120px;
+	height: 29px; 
+	display: block;
+	padding: 6px 0 0 16px;
+	background:url("../images/mp/button.png") no-repeat top left;
+	}
+#rightColumn .link-icon {
+	font-size: 11px;  
+	padding:  0px 0 2px 20px;
+	color:#000; 
+	background:url("../images/mp/arror-icon.png") no-repeat top left;
+	}
+#rightColumn .icon-button {
+	font-size: 12px;  
+	color:#fff;
+	width: 120px;
+	height: 29px; 
+	display: block;
+	padding: 6px 0 0 16px;
+	background:url("../images/mp/button.png") no-repeat top left;
+	}
+#rightColumn a:hover {color:#A61C20; text-decoration:underline;}	
+
+
+/* layout styles
+--------------------------------------------------------------------------------------- */
+
+.wrapper {
+	width: 905px;
+	padding-bottom: 21px;
+	position: relative;
+ 	left: 50%;
+ 	top: 0px;
+ 	margin-left: -451px;
+	background:url("../images/mp/bottom-img.png") no-repeat bottom left;
+	}
+	
+.Page {
+	width: 905px;
+	background:url("../images/mp/top-img.png") repeat-y;
+	}
+	
+#Header {
+	height: 135px;
+	width: 858px;
+	position: relative;
+	top: 0px;
+	left: 25px;
+	}
+	
+#Header .logo {
+	position: relative;
+	top: 5px;
+	left: 0px;
+	margin: 0px;
+	}
+	
+#Navigation {
+	width: 858px;
+	height: 46px;
+	background:url("../images/mp/menuBar.png") no-repeat;
+	position: relative;
+	top: 5px;
+	left: 0px;
+	}
+	
+#banner {
+	width: 860px;
+	height: 286px;
+	position: relative;
+	top: 2px;
+	left: 23px;
+	background:url("../images/mp/banner.png") no-repeat;
+	}
+	
+#imageContainer {
+	width: 834px;
+	height: 260px;
+	position: relative;
+	top: 13px;
+	left: 14px;
+	background: #610B0E;
+	}
+	
+#leftColumn {
+	width: 280px;
+	float: left;
+	margin: 17px 12px 10px 33px;
+	border-right: dashed 1px #CCCCCC;
+	}
+
+#rightColumn {
+	width: 541px;
+	float: left;
+	margin: 17px 5px 10px 0px;
+	}
+
+.Footer {
+	position: relative;
+	top: 10px;
+	left: 25px;
+	clear: both;
+	}
+
+.vitalsH {
+    text-align: right;
+    float:right;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.vitalsH p {
+    font-weight: bold;
+}
+
+.PostFooter {
+    width: 905px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+    position: relative;
+    left: 50%;
+    top: 0px;
+    margin-left: -451px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 7pt;
+}
+
+.checkout {
+  visibility: hidden;
+}

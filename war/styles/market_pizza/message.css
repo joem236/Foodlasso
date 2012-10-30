@@ -1,0 +1,30 @@
+.message {
+    width: 500px;
+    border: 1px solid #AAAAAA;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-bottom: 5px;
+    background-color: #FCFCFC;
+}
+
+.message H2 {
+    background-color: #CCCCCC;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.message .text {
+    width: 100%;
+}
+
+.controls {
+    background-color: #CCCCCC;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+#newMessage {
+    display: none;
+    visibility: hidden;
+}

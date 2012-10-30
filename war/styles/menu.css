@@ -1,0 +1,63 @@
+.category {
+    clear: both;
+    padding: 2px;
+    width: 90%;
+}
+
+.categoryName {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    text-transform:uppercase;
+    width: 99%;
+    color: #000;
+}
+
+.categoryDesc {
+    font-size: 10pt;
+    text-align: center;
+    width: 99%;
+    color: #666666;
+}
+
+.item {
+    clear: both;
+    width: 530px;
+    border-top: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    border-left: 1px solid #bebebe;
+    margin-bottom: 20px;
+    background: #f7f8f9;
+}
+
+.itemData {
+    float: left;
+    width: 60%;
+}
+
+.itemName { 
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+.itemDesc {
+    font-size: 8pt;
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.prices {
+    float: left;
+    padding: 2px;
+}
+
+.price {
+    font-size: 8pt;
+    float: left;
+    padding: 2px;
+}
+
+.itemControls {
+    float: right;
+    padding: 2px;
+}

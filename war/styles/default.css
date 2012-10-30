@@ -1,0 +1,206 @@
+* {
+     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+h1,h2,h3,h4 {
+    color: #FCFCFC;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #242323 url(../images/tpl/img06.jpg) repeat-x left top;
+	text-align: justify;
+	color: #444444;
+}
+
+.wrapper {
+	width: 905px;
+	padding-bottom: 21px;
+	position: relative;
+ 	left: 50%;
+ 	top: 0px;
+ 	margin-left: -451px;
+	}
+	
+.Page {
+	width: 905px;
+	}
+	
+#Header {
+	height: 135px;
+	width: 858px;
+	position: relative;
+	top: 0px;
+	left: 25px;
+	}
+	
+#Header .logo {
+	position: relative;
+	top: 5px;
+	left: 0px;
+	margin: 0px;
+	}
+
+#Navigation {
+	float: right;
+}
+
+#Navigation ul {
+	margin: 0px;
+	padding: 49px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#Navigation li {
+	float: left;
+	margin: 0px;
+}
+
+#Navigation a {
+	display: block;
+	width: auto;
+	padding: 6px 20px 6px 10px;
+	background: url(../images/tpl/img10.gif) no-repeat left 50%;
+	text-decoration: none;
+	color: #DDDDDD;
+}
+
+#Navigation a:hover {
+	text-decoration: underline;
+}
+
+#Navigation .active {
+}
+
+#Navigation .active a {
+}
+
+.NavItem {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.Spacer {
+    clear: both;
+}
+
+.Container {
+  float: left;
+  width: 624px;
+  border: 1px solid green;
+ }
+
+.SideBar { 
+  width: 285px;
+  height: 641px;
+  float: right;
+  font-family: Helvetica;
+  font-size: 14px;
+  border: 1px solid red;
+ }
+
+.Footer { 
+  clear: both;
+  font-family: "Lucida sans";
+  font-size: 10px;
+  font-weight: bold;
+  color: #c6c7c7;
+  height: 206px;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+.Widget {
+  margin-right: 22px;
+  margin-left: 22px;
+  width: 241px;
+}
+
+.Widget .WidgetTop {
+    width: 100%;
+    height: 7px;
+    background: transparent url(../images/widget_top.png) no-repeat scroll bottom left;
+}
+
+.Widget .WidgetTitle {
+    width: 100%;
+    height: 1.5um;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: url(../images/widget_mid.png) top left repeat-y;
+}
+
+.Widget .WidgetMiddle {
+    width: 100%;
+    height: 100%;
+    background: url(../images/widget_mid.png) top left repeat-y;
+}
+
+.Widget .WidgetBottom {
+    width: 100%;
+    height: 7px;
+    background: transparent url(../images/widget_bottom.png)  no-repeat scroll top left;
+}
+
+.buttonBlueLeft {
+    float: left;
+    width: 6px;
+    background: url(../images/blue_left.png) middle right no repeat;
+}
+
+.buttonBlueMiddle {
+    float: left;
+    width: 100%;
+    background: url(../images/blue_mid.png) middle left repeat-x;
+}
+
+.buttonBlueRight {
+    float: left;
+    width: 6px;
+    background: url(../images/blue_right.png) middle left no repeat;
+}
+
+.buttonGreenLeft {
+    float: left;
+    width: 6px;
+    background: url(../images/green_left.png) middle right no repeat;
+}
+
+.buttonGreenMiddle {
+    float: left;
+    width: 100%;
+    background: url(../images/green_mid.png) middle left repeat-x;
+}
+
+.buttonGreenRight {
+    float: left;
+    width: 6px;
+    background: url(../images/green_right.png) middle left no repeat;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.vitalsH {
+    text-align: right;
+    float:right;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.vitalsH p {
+    font-weight: bold;
+}

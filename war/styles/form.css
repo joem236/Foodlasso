@@ -1,0 +1,142 @@
+/*
+------------------------------
+Title:     Form styles
+Author:    Milton Pacheco
+Updated:   August, 18, 2009
+------------------------------
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+h1, h2, h3, h4{ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;font-weight:bold;}
+/*
+h1 { font-size: 2.4em; line-height: 1.3em;text-transform:none; padding: 0;margin: 0em 0em 1.2em 0em;}
+h2 { font-size: 1.4em; margin: 0 0 1.0em 0;} 
+h3 { font-size: 1.2em; margin: 0 0 .7em 0;}
+h4 { font-size: 1.0em; margin: 0 0 .4em 0;}
+p  { font-size: 1.3em; line-height: 1.4em; margin: 0 0 1.0em 0;}
+*/
+
+h2.menu-editor {color:#89826D; font:19px "Myriad Pro",Tahoma,Arial,Sans-Serif;margin-top: 15px;padding-bottom:13px;}
+
+label{display: block;}
+div.checkbox label,
+div.radio label{display: inline;}
+ul.process { margin: 2.5em 0 2.5em 0;}
+.process li{ font-size: 1.3em; line-height: 1.4em; width: 51.0em; margin: 0 0em 1.8em 0em; padding: 0 0 0 1.3em;width: 45.0em;
+ background: transparent url("../media/arrow-bullet1.png") no-repeat .1em .4em;}
+ol.bookmarks { margin:.5em 0 2.5em 0;}
+.bookmarks li{ font-size: 1.3em; line-height: 1.4em;margin: 0 0em .2em 0em; padding: 0;width: 45.0em;}
+
+.spacing{margin-bottom: 2.0em;}
+.errorIndicator{position: relative; top: -25px; left: -9px; font-weight: bold;color: #FF0000;}
+div.required label{font-weight: bold;}
+div.required label:after{content: ' *'}
+div.actions{border-top: 1px solid #E2E0D8; background-color: #fff;padding: 20px 10px 20px 0px; margin: 20px 0 0 0; 
+}
+
+div.warning {border: 1px solid #ccc;background-color: #fff;padding: 1.0em 1.0em 1.0em 1.6em;margin: 10px 0 0 0;
+  -moz-border-radius-bottomleft:7px;  
+   -moz-border-radius-bottomright:7px;  
+   -moz-border-radius-topleft:5px;  
+   -moz-border-radius-topright:7px;  
+   border-radius: 3px; 
+}
+
+div.pager{padding: 1em 1em 1em 0;}
+div.contentSize {width: 60.0em;}
+hr {margin-bottom: 1.5em;}
+
+/*-----------------------form labels, and inputs */
+
+form {text-align: left; width: 570px; margin-top: 20px;}
+form a:link, a:visited, a:active {color: #FF4100; text-decoration: none; height:18px;}
+form a:hover {color: #FF4100; text-decoration: underline;}
+fieldset {position: relative; margin: 0 0 10px 0; padding: 15px; /*border:1px solid #dfdfdf; 
+  -moz-border-radius:5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;*/}
+	
+fieldset p  { font-size: 12px; }
+legend {font-size: 14px; font-weight: bold; width:auto; margin-top:0px; line-height: 14px; color: #000;}
+label {display: block; font-weight: normal; width:200px; font-size: 12px; color:#403B2C; line-height: 14px; margin: 0 0 6px 3px;padding: 0px; /*border: 1px solid #ccc;*/}
+input {display: block;}
+input:focus, textarea:focus {background:#fafafa;}
+textarea {display: block;}
+select {margin: 0px;}
+cursor: pointer;
+hr {padding-bottom: 20px;}
+
+.actions input.orange-button {
+    padding: 0;
+    width: 123px; /* for IE only */
+	height: 40px;
+    overflow: hidden;
+	float: left; margin: 0; display: inline;
+	background:url("../images/save-btn.png") no-repeat;
+	border:none;
+} 
+
+.actions input.orange-button:hover {
+    padding: 0;
+    width: 123px; /* for IE only */
+	height: 40px;
+    overflow: hidden;
+	float: left; margin: 0; display: inline;
+	background:url("../images/save-btn.png") no-repeat;
+	background-position: 0 -40px;
+	cursor:pointer;
+	border:none;
+} 
+
+
+button {margin-top: 10px; vertical-align:middle;}
+
+
+/*----------Account Sign up----------- */
+
+fieldset .setup {color:#89826D; font:19px "Myriad Pro",Tahoma,Arial,Sans-Serif;padding-bottom:13px;}
+
+fieldset .leftContainer {float:left; width: 205px; margin: 12px 15px 8px 0; padding: 0; display:inline;}
+fieldset .leftContainer input  {display: block; margin:0px; padding:0px; height:28px; width: 200px; border:1px solid #E2E0D8; background:#f9f8f6; color: #7C7972;}
+
+fieldset .rightContainer {float:left; width: 205px; margin: 12px 15px 8px 0; padding: 0; display:inline;}
+fieldset .rightContainer input  {display: block; margin:0px; padding:0px; height:28px; width: 200px; border:1px solid #E2E0D8; background:#f9f8f6; color: #7C7972;}
+
+fieldset .leftContainer input.upload {
+  border : 1px solid #E2E0D8;
+  height: 28px; /*change to whatever size you prefer*/
+  margin-right: 10px;
+}
+
+/*
+fieldset .rightContainer {float:left; width: 305px; margin: 12px 100px 8px 0; padding: 0; display:inline;}
+fieldset .rightContainer input  {float:left; display: block; margin:0px; padding:0px; height:24px; width: 200px; border:1px solid #ccc;
+padding-left:6px;
+padding-top:3px;}
+*/
+
+fieldset .leftContainer-bio {float:left; width: 415px; margin: 12px 10px 8px 0; padding: 0; display:inline; }
+fieldset .leftContainer-bio textarea {
+display:inline;
+float:left;
+margin:2px 0px 16px 0;
+padding:0;
+width:415px;
+height: 100px;
+border:1px solid #E2E0D8; background:#f9f8f6; color: #7C7972;
+}
+
+#submit-actions {
+float: left; width: 435px; border: 1px solid #ccc; background-color: #fff; padding: 1.0em 0em 1.0em 1.6em; margin: 1.0em 0 1.5em 0;}
+
+/*----------Menu Edit----------- */
+
+.menuEditContainer {float:left; width: 255px; margin: 12px 15px 8px 0; padding: 0; display:inline;}
+.menuEditContainer textarea  {display: block; margin:0px; padding:0px;}
+.menuEditPrices {position:relative; width: 100px; margin: 8px 5px 0 0; padding: 0; display:inline;}
+.menuEditPrices input  {display: block; margin:0px; padding:0px; height:28px; width: 50px;}

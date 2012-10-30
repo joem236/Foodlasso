@@ -1,0 +1,136 @@
+/*
+------------------------------
+Title:     Typography and content styles
+Author:    Milton Pacheco
+Updated:   January 12, 2009
+------------------------------
+*/
+
+
+body{ font-family:"Lucida Grande", Helvetica, San-Serif; font-weight: normal; background-color:#f5f7f7;}
+
+/* global content styles
+--------------------------------------------------------------------------------------- */
+
+h1, h2, h3, h4 {normal;color: #3980ca;}
+h1 { font-size: 30px;}
+h2 { font-size: 21px;} 
+h3 { font-size: 19px;}
+h4 { font-size: 12px;} 
+
+p { font-size:12px; line-height: 19px; font-weight: normal;}
+
+img { border: none;}
+
+strong { color: #ee9f40;font: normal 12px Arial, Helvetica, Sans-Serif;text-decoration: none;}
+em {font-size:12px; text-decoration:none;}
+abbr, acronym { color: #ee9f40;}
+
+a:link, a:visited, a:active { font-family:"Lucida Grande", Helvetica, San-Serif;text-decoration: none;}
+a:hover { font-family:"Lucida Grande", Helvetica, San-Serif;text-decoration: none;}
+
+/* header logo, NavContainer, navigation links
+--------------------------------------------------------------------------------------- */
+
+#header {}
+	#header h1.logo {position:absolute;left: 20px;top: 8px;margin: 0px;padding: 0px;border: none;}
+	
+#NavContainer{}
+	#NavContainer { position: absolute;top: 28px;right:0px; width: 496px;margin: 0px;padding: 0px;}
+	#NavContainer #navigation { margin: 0px;padding: 10px 0 33px 10px;}
+	#NavContainer #navigation li {margin: 0px; padding: 0px;display: inline;list-style-type: none;}
+	#NavContainer #navigation a:link, 
+	#NavContainer #navigation a:visited {
+ 		float: left;
+ 		line-height: 17px;
+ 		padding: 3px 4px 3px 4px;
+		margin: 0 0 0 30px;
+ 		font-size: 12px;
+ 		color: #fff;
+ 		}
+	
+	#NavContainer #navigation a:hover {color: #406d8f; /*background-color:#406d8f;*/}
+	#NavContainer #navigation li .active  {color: #a4835b;}
+	#NavContainer #navigation li .settingbtn {margin: 0px; border: 1px solid #FF0000;}
+	#NavContainer #navigation li .loginbtn {margin: 0px;}
+	#NavContainer #navigation li .loginSpacer {
+		float: left;
+		width: 3px; 
+		height: 75px; 
+		margin-right: 10px;
+		border: 1px solid #fff;
+		}
+	
+
+/*  --right column on all pages-- links, classes and Id's  
+--------------------------------------------------------------------------------------- */
+
+#right-column{}
+	#right_column #topNav {width: 241px; height: 41px;margin: 0 0 10px 0px;padding: 0px;}
+	#right_column #topNav li {margin: 0px; padding: 0px;display: inline;list-style-type: none;}
+	#right_column #topNav a:link, 
+	#right_column #topNav a:visited {
+ 		float: left;
+ 		padding: 0px;
+		margin: 0;
+ 		}
+	
+	#right_column #topNav .help {float: left; display: block; margin: 0 5px 5px 0; width: 118px; height: 41px;}
+	#right_column #topNav .logout {float: left; display: block; margin: 0 0 5px 0; width: 118px; height: 41px;}
+	#right_column #topNav a:hover {color: #fff;}
+	
+	#topAd {
+		position: relative;
+		width: 241px;
+		height: 199px;
+		margin: 10px 0 0 0;
+		background-color: #000000;
+		background:url("../images/ad.png") no-repeat top left;
+		}
+		
+	#widget {
+		position: relative;
+		width: 241px;
+		height: 111px;
+		margin: 10px 0 0 0;
+		background-color: #ccc;
+		}
+
+
+/*-- footer --
+--------------------------------------------------------------------------------------- */
+
+#footer {}	
+	#footer_inner p {
+		font: 9px Lucida Sans, Helvetica, Sans-Serif;
+		width: 400px;
+		float: left;
+		margin: 20px 0 0 20px;
+		color: #80898E;
+	}
+
+	#subNav {height: 38px; width: 265px; float:right; margin: 12px 10px 0px 15px; text-align: right;}
+	#subNav p { font: 9px Lucida Sans, Helvetica, Sans-Serif; float: right; width: 100px; margin: 5px 2px 0 20px;}
+	#subNav a { font: 9px Lucida Sans, Helvetica, Sans-Serif; color: #406d8f;}
+	#subNav a:hover { font: 9px Lucida Sans, Helvetica, Sans-Serif; color: #406d8f; text-decoration:underline;}
+	#footerLinks ul { list-style:none; margin: 0px;text-decoration: none;}
+	#footerLinks li { 
+		list-style:none; 
+		margin-right: 3px;
+		display:inline;
+		height: 13px;
+		padding: 0 0 3px 0;
+		}
+  
+	#footerLinks li a {font: 9px Lucida Sans, Helvetica, Sans-Serif;color: #80898E; margin: 0px; padding: 0px; text-decoration: none; 			 		font-weight: none; }  
+	#footerLinks li a span { color: #80898E}
+	#footerLinks li a:link, 
+	#footerLinks li a:visited,
+	#footerLinks li a:active {color: #80898E;}
+	#footerLinks li a:hover {color:#406d8f; text-decoration:none;}
+	
+
+ 
+ 
+ 
+ 

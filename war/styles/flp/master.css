@@ -1,0 +1,59 @@
+/* CSS Document */
+/* --------------------------------------------------------------------------------------------------------
+   Title:			Dynavac
+   Author:			Milton Pacheco
+   Email:			mpacheco@crunchbc.com
+   License: 		Copyright 2009, Crunch Brand Communications. All Rights Reserved.
+   description:	    This is the base style sheet imports other style sheets.
+----------------------------------------------------------------------------------------------------------*/ 
+   
+/* Imported styles
+--------------------------------------------------------------------------------------- */
+   
+   @import url("reset.css");
+   @import url("layout.css");
+   @import url("content.css");
+
+/* --Global Classes--*/
+
+.floatRight {float:right;}
+.floatLeft {float:left;}
+
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align:center;}
+.justify {text-align:justify;}
+.hide {display: none;}
+.clear {clear: both;}
+
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+.underline {border-bottom:1px solid;}
+.highlight {background:#ffc;}
+.italic {font-style:italic;}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.floatRight {float:right;}
+.floatLeft {float:left;}
+
+#menuReviews {width:513px; height: auto; margin: 10px 0 10px 10px; border:none;}
+#menuReviews .commentInfo {border-bottom: 1px solid #DBE6F0; padding: 13px 0 10px 0;}
+#menuReviews .commentInfo p, h4, .comment-text {margin-left:10px;}
+#menuReviews .commentInfo em {font-style:italic;}
+#menuReviews .commentInfo h4 {font-size: 14px; color: #000; font-weight: bold;line-height: 16px;}
+#menuReviews .commentInfo p {color:#888; font-size: 10px; margin-bottom:4px;}
+#menuReviews .commentInfo .comment-text {color:#575657; font-size: 11px; margin-bottom:4px;}
+#menuReviews .commentInfo .reviewer {font-weight: bold; font-style:normal;}

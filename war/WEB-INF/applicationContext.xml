@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:aop="http://www.springframework.org/schema/aop"
+         xmlns:tx="http://www.springframework.org/schema/tx"
+         xmlns:context="http://www.springframework.org/schema/context"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <!-- the parent application context definition for the springapp application -->
+	<bean id="categoryDao" class="com.foodlasso.repository.JdbcCategoryDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+	<bean id="itemDao" class="com.foodlasso.repository.JdbcItemDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+	
+	<bean id="priceDao" class="com.foodlasso.repository.JdbcPriceDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="menuDao" class="com.foodlasso.repository.JdbcMenuDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+	
+	<bean id="companyDao" class="com.foodlasso.repository.JdbcCompanyDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+	
+	<bean id="menuManager" class="com.foodlasso.service.MenuManager">
+        <property name="menuDao" ref="menuDao"/>
+        <property name="categoryDao" ref="categoryDao"/>
+        <property name="itemDao" ref="itemDao"/>
+        <property name="priceDao" ref="priceDao"/>
+    </bean>
+	
+	<bean id="companyManager" class="com.foodlasso.service.CompanyManager">
+        <property name="companyDao" ref="companyDao"/>
+    </bean>
+	
+	<bean id="transactionManager" 
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <tx:annotation-driven/>
+    
+    <context:component-scan base-package="com.foodlasso.domain" />
+    
+    <bean id="sessionFactory"
+    	  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    	<property name="dataSource" ref="dataSource" />
+    	<property name="packagesToScan" value="com.foodlasso.domain" />
+    	<property name="hibernateProperties">
+    		<props>
+    			<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+    			<prop key="hibernate.max_fetch_depth">3</prop>
+    			<prop key="hibernate.jdbc.fetch_size">50</prop>
+    			<prop key="hibernate.jdbc.batch_size">10</prop>
+    			<prop key="hibernate.show_sql">true</prop>
+    		</props>
+    	</property>	  
+    </bean>
+    
+	 <aop:config>
+        <aop:advisor pointcut="execution(* *..MenuManager.*(..))" advice-ref="txAdvice"/>
+        <aop:advisor pointcut="execution(* *..CompanyManager.*(..))" advice-ref="txAdvice"/>
+    </aop:config>
+	
+	<tx:advice id="txAdvice">
+        <tx:attributes>
+            <tx:method name="save*"/>
+            <tx:method name="*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <bean id="propertyConfigurer" 
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+</beans>
